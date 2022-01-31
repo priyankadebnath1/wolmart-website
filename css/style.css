@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/*======================================================
+                Common css end
+======================================================*/
+/*======================================================
+                Header psrt start
+======================================================*/
+#header {
+  padding: 18px 0;
+  background: #f5f6f8;
+}
+
+#header .header_left p {
+  color: #333;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+#header .head_crncy ul li {
+  position: relative;
+}
+
+#header .head_crncy ul li a {
+  color: #333;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+#header .head_crncy ul li ul {
+  position: absolute;
+  width: 50px;
+  left: 0;
+  top: 30px;
+  background: #fff;
+  text-align: center;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+#header .head_crncy ul li ul:after {
+  position: absolute;
+  content: '';
+  left: 50%;
+  top: -20px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+}
+
+#header .head_crncy ul li:hover ul {
+  display: block;
+}
+
+#header .header_menu ul li a {
+  color: #333;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  margin: 0 10px;
+}
+
+#header .sign_reg ul li a {
+  color: #333;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+/*======================================================
+                Header psrt end
+======================================================*/
+/*# sourceMappingURL=style.css.map */

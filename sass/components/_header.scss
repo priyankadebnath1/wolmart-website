@@ -1,0 +1,82 @@
+@import '../mixis/mixins';
+@import '../varibale/varibales';
+
+/*======================================================
+                Header psrt start
+======================================================*/
+#header {
+    padding: 18px 0;
+    background: $clr2;
+
+    .header_left {
+        p {
+            @include fns($clr1, 12px, 400, $ff1);
+        }
+    }
+
+    .head_crncy {
+        ul {
+            li {
+                position: relative;
+
+                a {
+                    @include fns($clr1, 12px, 400, $ff1);
+                }
+
+                ul {
+                    position: absolute;
+                    width: 50px;
+                    left: 0;
+                    top: 30px;
+                    background: #fff;
+                    text-align: center;
+                    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+                    display: none;
+
+                    &:after {
+                        position: absolute;
+                        content: '';
+                        left: 50%;
+                        top: -20px;
+                        transform: translateX(-50%);
+                        border-left: 10px solid transparent;
+                        border-right: 10px solid transparent;
+                        border-top: 10px solid transparent;
+                        border-bottom: 10px solid #fff;
+                    }
+                }
+
+                &:hover {
+                    ul {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .header_menu {
+        ul {
+            li {
+                a {
+                    @include fns($clr1, 12px, 400, $ff1);
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+
+    .sign_reg{
+        ul {
+            li {
+                a {
+                    @include fns($clr1, 12px, 400, $ff1);
+                }
+            }
+        }
+    }
+}
+
+/*======================================================
+                Header psrt end
+======================================================*/
